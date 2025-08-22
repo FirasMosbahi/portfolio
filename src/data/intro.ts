@@ -19,3 +19,23 @@ export const INTRO: IntroData = {
   linkedin : 'https://www.linkedin.com/in/firas-mosbahi-6363b420a/',
   github : 'https://github.com/FirasMosbahi',
 };
+
+
+export const PersonStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Firas Mosbahi",
+  "url": "https://firas.im",
+  "sameAs": [
+    "https://www.linkedin.com/in/firas-mosbahi-6363b420a/",
+    "https://github.com/FirasMosbahi"
+  ],
+  "jobTitle": "DevSecOps Engineer",
+  "image": "https://firas.im/intro/firas.png",
+  "description": "Firas Mosbahi is a DevSecOps Engineer with 3+ years experience in CI/CD, Cloud, Kubernetes, GitOps, and automation.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Saint Etienne",
+    "addressCountry": "France"
+  }
+};

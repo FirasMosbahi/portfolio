@@ -22,3 +22,22 @@ export const ABOUT_ME : AboutMe = {
     ],
     invitation: 'Let’s deploy something big, scale to infinity, and serve users reliably and securely. The future of technology is limitless—let’s build it together.'
 }
+
+export const AboutMeStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Firas Mosbahi",
+  "url": "https://firas.im",
+  "sameAs": [
+    "https://www.linkedin.com/in/firas-mosbahi-6363b420a/",
+    "https://github.com/FirasMosbahi"
+  ],
+  "jobTitle": "DevSecOps Engineer",
+  "image": "https://firas.im/about-me/firas.png",
+  "description": "DevSecOps Engineer with 3+ years of experience in CI/CD, Cloud, Kubernetes, GitOps, and automation. Experienced in building secure, scalable, and automated systems.",
+  "knowsLanguage": ["English", "French", "Arabic"],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "National Institute of Applied Sciences and Technologies (INSAT)"
+  }
+};

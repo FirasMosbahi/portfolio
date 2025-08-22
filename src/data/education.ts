@@ -40,3 +40,18 @@ export const EDUCATION: EducationData = {
     },
   ],
 };
+
+export const EducationStructuredData = EDUCATION.schools.map(school => ({
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalCredential",
+  "name": school.diploma,
+  "educationalLevel": "Diploma",
+  "educationalProgramMode": "FullTime",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": school.name
+  },
+  "startDate": school.date.split("-")[0].trim(),
+  "endDate": school.date.split("-")[1]?.trim() || school.date.split("-")[0].trim(),
+  "description": school.description
+}));

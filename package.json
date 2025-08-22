@@ -7,11 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr": "npx @svgr/cli -d src/components/icons --icon --typescript public/icons"
+    "svgr": "npx @svgr/cli -d src/components/icons --icon --typescript public/icons",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "flowbite-react": "^0.12.7",
     "next": "15.4.6",
+    "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },

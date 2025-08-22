@@ -50,3 +50,17 @@ export const PROJECTS : ProjectsData = {
         }
     ]
 }
+
+export const ProjectsStructuredData = PROJECTS.projects.map(project => ({
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": project.name,
+  "url": project.redirect,
+  "description": project.briefDescription,
+  "image": `https://firas.im${project.image}`,
+  "author": {
+    "@type": "Person",
+    "name": "Firas Mosbahi",
+    "url": "https://firas.im"
+  }
+}));

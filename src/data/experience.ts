@@ -49,3 +49,25 @@ export const EXPERIENCE : ExperienceData = {
         }
     ]
 }
+
+
+export const ExperienceStructuredData = EXPERIENCE.experiences.map(exp => ({
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": exp.position,
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": exp.name
+  },
+  "datePosted": exp.date.split("–")[0].trim(),
+  "description": exp.tasks.join(" "),
+  "employmentType": "FULL_TIME",
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Remote/Various",
+      "addressCountry": "France"
+    }
+  }
+}));

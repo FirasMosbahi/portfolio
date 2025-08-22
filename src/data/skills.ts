@@ -119,3 +119,12 @@ export const SKILLS: SkillsData = {
     },
   ],
 };
+
+
+export const SkillsStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Firas Mosbahi",
+  "url": "https://firas.im",
+  "skills": SKILLS.skills.map(skill => skill.name)
+};
