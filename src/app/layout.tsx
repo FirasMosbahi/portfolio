@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Firas Mosbehi",
-  description: "Firas Mosbehi Portfolio",
+  description: "Firas Mosbehi Portfolio", 
 };
 
 export default function RootLayout({
@@ -25,6 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-site-verification" content="dWRISc3-7YweJASb5n2ijKWi2bbmaLQDIOk4hI22_O8" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen lg:h-screen flex flex-col`}
       >
