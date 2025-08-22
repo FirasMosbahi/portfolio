@@ -5,5 +5,5 @@ module.exports = {
   sitemapSize: 5000,
   changefreq: 'weekly',          // Optional: how often pages change
   priority: 0.8,                 // Optional: page priority
-  outDir: './.next',               // Only if using `next export`. Otherwise default is `.next`
+  outDir: './public',               // Only if using `next export`. Otherwise default is `.next`
 };
